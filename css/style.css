@@ -76,48 +76,36 @@ body  {
   }
   
 
-.nav {
-	position: sticky;
-	background-color: #000000;
-	margin-top: 0px;
-	left: 5%;
-	right: 5%;
-	
+  header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+    font-size: 1.5em;
 }
 
 
 
-.nav .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 5px 0;
-	transition: all 0.3s ease-in-out;
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
 }
 
-.nav ul {
-	display: flex;
-	list-style-type: none;
-	align-items: center;
-	justify-content: center;
-}
-.nav li {
-	margin-left: 10px;
-	margin-right: 10px;
+header a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease 0s;
 }
 
-.nav a {
-	font-family: 'Courier New', Courier, monospace;
-	border-spacing: 10px;
-	color: #ffffff;
-	text-decoration: none;
-	padding: 7px 15px;
-	transition: all 0.3s ease-in-out;
+header a:hover {
+    color: #000000;
 }
 
-
-
-/* Sectie--------------------------------------------------- */
 .container {
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -134,8 +122,6 @@ body  {
 .container h1 {
 	color: #000000;
 }
-
-
 
 .TextContainer {
 	padding: 3%;
@@ -163,61 +149,11 @@ body  {
 	font-family: 'Courier New', Courier, monospace;
 }
 
-.button {
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-style: solid;
-	border-color: #000000;
-	background-color: #603905;
-	font-family: 'Courier New', Courier, monospace;
-	font-weight: 700;
-	transition: all 0.3s ease-in-out;
-}
-
-.button a {
-	color: #000000;
-}
-
-.button:hover a {
-	color: #fff;
-}
-
-.button:hover {
-	letter-spacing: 2px;
-	background-color: #603905;
-}
-
 .TextContainer p {
 	margin-bottom: 100px;
 }
 
-
-
-
-
-
-
-.fotos{
-	display: flex;
-	width: 100%;
-	align-items: center;
-}
-.fotos div{
-	width: 100%;
-	height: 300px;
-	margin: 5%;
-	border-style: solid;
-	border-color: #603905;
-	box-shadow: 10px 5px 5px #7e4606;
-}
-.fotos img{
-	width: 100%;
-	height: 100%;
-}
-
-/* Footer */
+/* FOOTER */
 .footer-distributed {
 	background-color: #733a00;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -234,8 +170,6 @@ body  {
 	font-size: 14px;
 	margin: 0;
 }
-
-/* Footer links */
 
 .footer-distributed p.footer-links {
 	font-size: 18px;
@@ -296,14 +230,9 @@ body  {
 	text-decoration: underline;
 }
 
-
-
-
-/* ___________________________________________________________________________*/
-
- 
+/* CV PAGINA */
  .left-computerervaring{
-	color: #000000;
+	color: #ffffff;
 }
  
 .Titel{
@@ -341,9 +270,7 @@ body  {
     margin-bottom: .3rem;
 }
 .school .naam-school{
-    margin-bottom: 0.9rem;
-    
-    
+    margin-bottom: 0.9rem;    
 }
 .school .datum{
     font-size: 0.9rem;
@@ -369,7 +296,6 @@ body  {
     height: 100%;
     border-radius: inherit;
 }
-
 .talen-container .taal .right-taal .outer-layer{
   background-color: #000000;
   height:0.4rem;
@@ -514,8 +440,6 @@ form {
   margin: 50px 0;
 }
 
-
-
 .underline {
   border-bottom: solid 2px #000000;
   margin: -0.512em auto;
@@ -578,8 +502,6 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 	width: 45%;
 }
 
-
-
 select::-ms-expand {
   display: none;
 }
@@ -641,53 +563,8 @@ textarea {
   color: #F2F3EB;
 }
 
-@media screen and (max-width: 768px) {
-  #container {
-    margin: 20px auto;
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 26px;
-  }
-  
-  .underline {
-    width: 68px;
-  }
-  
-  #form_button {
-    padding: 15px 25px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  h1 {
-    font-size: 18px;
-  }
-  
-  .icon {
-    height: 35px;
-    width: 35px;
-  }
-  
-  .underline {
-    width: 53px;
-  }
-  
-  input[type='text'], [type='email'], select, textarea {
-    font-size: 0.875em;
-  }
-}
-
-
-
 /*****************************************************************************/
-
 /* 3D Slideshow */ 
-
-
 #slideshow {
   margin: 0 auto;
   padding-top: 50px;
@@ -804,4 +681,4 @@ textarea {
   } to {
     transform: rotateY(360deg);
   }
-}
+} 
